@@ -1,0 +1,52 @@
+###
+POST http://localhost:8082/video_like/like
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4MTQxMDksImV4cCI6MTY1NzgxNzcwOSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.YuUo0h-fc3tTnNHodHsf-x6RVxgu2VKmlEifqqMfPq4
+
+{
+  "videoId" : "402880ea81e536000181e53614b50000"
+}
+
+###
+POST http://localhost:8082/video_like/remove
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4MTAwMzYsImV4cCI6MTY1NzgxMzYzNiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.olFUR9quoYmMrNT5Qo4esizipDyPmX4v0bGyfsJ5gfA
+
+{
+  "videoId" : "8a8a817f81f5d41e0181f5d74c040004"
+}
+
+
+###
+GET http://localhost:8082/video_like/userLikedVideoList
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4MTQxMDksImV4cCI6MTY1NzgxNzcwOSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.YuUo0h-fc3tTnNHodHsf-x6RVxgu2VKmlEifqqMfPq4
+
+###
+GET http://localhost:8082/video_like/getUserLikedVideoListByUserId/62
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4MTUwODMsImV4cCI6MTY1NzgxODY4MywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.eGIDOzXyzP0ee-LUI-UqtBa5uOYhOtr9LSYQI1Ziuww
+
+###
+PUT http://localhost:8082/region/adm/14
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU0ODYwOTksImV4cCI6MTY1NTQ4OTY5OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiQURNSU4ifQ.qI4q8vG_L_YZS2lpTep9wLUlJtIFwCvHUNt-u1xBRzI
+
+{
+  "key" : "Навоий 1",
+  "nameUz" : "Навоий uzbekcha",
+  "nameRu" : "Навоий ruscha",
+  "nameEn":"Навоий english"
+}
+
+###
+DELETE http://localhost:8082/region/adm/14
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU0ODYwOTksImV4cCI6MTY1NTQ4OTY5OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiQURNSU4ifQ.qI4q8vG_L_YZS2lpTep9wLUlJtIFwCvHUNt-u1xBRzI
+
+
+###
+GET http://localhost:8082/region/adm/pagination?page=0&size=3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU0ODYwOTksImV4cCI6MTY1NTQ4OTY5OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiQURNSU4ifQ.qI4q8vG_L_YZS2lpTep9wLUlJtIFwCvHUNt-u1xBRzI
+Accept-Language: en

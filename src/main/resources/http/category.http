@@ -1,0 +1,34 @@
+###
+POST http://localhost:8082/category/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxOTkyNTksImV4cCI6MTY1NzIwMjg1OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.A23RkEj95JSPbulNeS4yOw7f5mwVxHpKbJTEVq6GFCI
+
+{
+  "name" : "yana1"
+
+}
+
+
+
+###
+GET http://localhost:8082/category/list
+Content-Type: application/json
+
+
+
+
+###
+PUT http://localhost:8082/category/update/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxNDc0NTMsImV4cCI6MTY1NzE1MTA1MywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.JSC9AY12eeYeaAeXsO0RvmWgoyEM5jNTs5z1lNkCCfI
+
+{
+  "name" : "kino"
+}
+
+###
+DELETE http://localhost:8082/category/delete/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxNDc1NDcsImV4cCI6MTY1NzE1MTE0NywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.823OM_kr2jXaBT1X0v6Pu9r-hLx50Vt6CoWvgavS7js
+
+

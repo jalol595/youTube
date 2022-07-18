@@ -1,0 +1,33 @@
+###
+POST http://localhost:8082/tag/create
+Content-Type: application/json
+
+{
+  "name" : "captiva900"
+
+}
+
+
+
+###
+GET http://localhost:8082/tag/list
+Content-Type: application/json
+
+
+
+
+###
+PUT http://localhost:8082/tag/update/5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxOTg3MTEsImV4cCI6MTY1NzIwMjMxMSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.TVLr1xl2ly-w84xyApuPch7YEZ7WMNICpn81OdXD550
+
+{
+  "name" : "captiva1000"
+}
+
+###
+DELETE http://localhost:8082/tag/delete/6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxOTg3MTEsImV4cCI6MTY1NzIwMjMxMSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.TVLr1xl2ly-w84xyApuPch7YEZ7WMNICpn81OdXD550
+
+

@@ -1,0 +1,47 @@
+###profile register
+POST http://localhost:8082/register/user
+Content-Type: application/json
+
+{
+  "name": "vdxxbfcg",
+  "surname" :"fdgbhnfd",
+  "email" : "jalolkarshiboyev@gmail.com",
+  "password" : "123456"
+
+}
+
+
+###//profile token
+POST http://localhost:8082/auth/login
+Content-Type: application/json
+
+{
+  "email" : "kaka.com",
+  "password" : "9595"
+}
+
+
+###//update any profile
+PUT http://localhost:8082/profile/detail
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTYzMDU1NzksImV4cCI6MTY1NjMwOTE3OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxNiwicm9sZSI6IlVTRVIifQ.Ie-i3TpSaITv6PffaHSBwjWJUklo2XnNiandG_LAogk
+
+{
+  "name": "xumkalla",
+  "surname" :"roltonbosh",
+  "email" : "rolton.com",
+  "password" : "9595"
+
+}
+
+
+
+###
+GET http://localhost:8082/auth/adm/emailList?page=0&size=2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTY0MTIxMjMsImV4cCI6MTY1NjQxNTcyMywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiQURNSU4ifQ.cEAsTgSupUpC06s0aIyYFvdIWntYHEyjRgdAL265Qtc
+
+
+
+
+

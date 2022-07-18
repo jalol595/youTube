@@ -1,0 +1,52 @@
+###
+POST http://localhost:8082/comment_like/like
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4MTU1MTUsImV4cCI6MTY1NzgxOTExNSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.gj5mWm6uCeeP4QsYQq3EbcPGxV-bVyev2BSOVfJzEvM
+
+{
+  "commentId" : 4
+}
+
+###
+POST http://localhost:8082/comment_like/remove
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4MTU1MTUsImV4cCI6MTY1NzgxOTExNSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.gj5mWm6uCeeP4QsYQq3EbcPGxV-bVyev2BSOVfJzEvM
+
+{
+  "commentId" : 4
+}
+
+
+###
+GET http://localhost:8082/region
+Content-Type: application/json
+Accept-Language: en
+
+###
+GET http://localhost:8082/region/adm
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU0ODYwOTksImV4cCI6MTY1NTQ4OTY5OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiQURNSU4ifQ.qI4q8vG_L_YZS2lpTep9wLUlJtIFwCvHUNt-u1xBRzI
+
+###
+PUT http://localhost:8082/region/adm/14
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU0ODYwOTksImV4cCI6MTY1NTQ4OTY5OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiQURNSU4ifQ.qI4q8vG_L_YZS2lpTep9wLUlJtIFwCvHUNt-u1xBRzI
+
+{
+  "key" : "Навоий 1",
+  "nameUz" : "Навоий uzbekcha",
+  "nameRu" : "Навоий ruscha",
+  "nameEn":"Навоий english"
+}
+
+###
+DELETE http://localhost:8082/region/adm/14
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU0ODYwOTksImV4cCI6MTY1NTQ4OTY5OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiQURNSU4ifQ.qI4q8vG_L_YZS2lpTep9wLUlJtIFwCvHUNt-u1xBRzI
+
+
+###
+GET http://localhost:8082/region/adm/pagination?page=0&size=3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU0ODYwOTksImV4cCI6MTY1NTQ4OTY5OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiQURNSU4ifQ.qI4q8vG_L_YZS2lpTep9wLUlJtIFwCvHUNt-u1xBRzI
+Accept-Language: en

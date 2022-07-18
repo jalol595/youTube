@@ -1,0 +1,108 @@
+###//update password
+POST http://localhost:8082/profile/changePassword
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxNDE0MzAsImV4cCI6MTY1NzE0NTAzMCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.zv7JeEq1r8Liy6ROs3PT4UOc4Jc1hzFeWMiYa0VBAOI
+
+
+{
+
+  "password" : "2222"
+
+}
+
+
+
+
+###//update email
+POST http://localhost:8082/profile/updateEmail
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcwOTI2MDksImV4cCI6MTY1NzA5NjIwOSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo0MX0.QfW0TWutRezKTQYHOjVh8qklzp1T0hl4bWNt4DQ8RVM
+
+
+{
+
+
+  "email" : "publisher@@.com"
+
+
+}
+
+###//update Detail
+PUT http://localhost:8082/profile/updateDetail
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxNDIzNDEsImV4cCI6MTY1NzE0NTk0MSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.RchRYkDqQR8iXbkiXjaTkEAvd8xTK-9jzawyBaRrli8
+
+
+{
+
+  "name" : "ccc",
+  "surname" : "sss"
+
+}
+
+
+###//update Photo
+PUT http://localhost:8082/profile/updatePhoto
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxMzY4MTIsImV4cCI6MTY1NzE0MDQxMiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.HZgfKGsvrO2kVa4V2OasoR5P1xiuKkpgrhabzg6sCfM
+
+{
+
+  "photoId" : "8a8a816081d47a2e0181d50de3980003"
+
+
+}
+
+
+###//get Detail
+GET http://localhost:8082/profile/getDetail
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxMzY4MTIsImV4cCI6MTY1NzE0MDQxMiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.HZgfKGsvrO2kVa4V2OasoR5P1xiuKkpgrhabzg6sCfM
+
+
+
+###//admin create profile moder and publisher
+POST http://localhost:8082/profile/adm/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcyMzAxNjksImV4cCI6MTY1NzIzMzc2OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.7BKq6HVrxQsE-ktaI2Ysrq-H_E52tWAeLZr4NepzyTk
+
+{
+  "name": "xxxxxxxxxxxxx;",
+  "surname" :"xxxxxxxxxxxxxxxx",
+  "email" : "xxxxxxxxxx@gmail.com",
+  "role" : "ROLE_MODERATOR",
+  "password" : "1234"
+}
+
+
+
+###//update profile by admin
+PUT http://localhost:8082/profile/update
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxMzkyNjAsImV4cCI6MTY1NzE0Mjg2MCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.9mah0W1Sl7S_d8p3Fbu2CEXz8KeaXND83gZzWg2-OTA
+
+{
+  "name": "jalol007",
+  "surName" :"karshiboyev007",
+  "email" : "kkk.com007",
+  "phone" : "998945779598"
+}
+
+###//get list by admin all
+GET http://localhost:8082/profile
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU0NzkwNzQsImV4cCI6MTY1NTQ4MjY3NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiQURNSU4ifQ.ozHE0LTmCjVeUNbw2B_19kUkRmCJwH5-M2-c3etycyk
+
+###//delete by admin
+DELETE http://localhost:8082/profile/10
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU0NzkwNzQsImV4cCI6MTY1NTQ4MjY3NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiQURNSU4ifQ.ozHE0LTmCjVeUNbw2B_19kUkRmCJwH5-M2-c3etycyk
+
+
+###//get list by admin pagination
+GET http://localhost:8082/profile/pagination?page=0&size=4
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU0NzkwNzQsImV4cCI6MTY1NTQ4MjY3NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiQURNSU4ifQ.ozHE0LTmCjVeUNbw2B_19kUkRmCJwH5-M2-c3etycyk
+
+
+

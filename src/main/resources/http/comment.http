@@ -1,0 +1,60 @@
+###
+POST http://localhost:8082/comment/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4MTU1MTUsImV4cCI6MTY1NzgxOTExNSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.gj5mWm6uCeeP4QsYQq3EbcPGxV-bVyev2BSOVfJzEvM
+
+{
+  "videoId": "8a8a817f81f5d41e0181f5df5cb0000c",
+  "content":  "gggggggggggggggggggggggggggggggggggggggg"
+
+
+}
+
+###
+PUT http://localhost:8082/comment/update/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc3ODY5NTMsImV4cCI6MTY1Nzc5MDU1MywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2OX0.MD6i3k8GmUzFl2PXNy_9aB8iG_-h1MPTV0rvRP-4ty4
+
+{
+  "content":  "daxshat ku"
+}
+
+###
+DELETE http://localhost:8082/comment/delete/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc3ODc0NzMsImV4cCI6MTY1Nzc5MTA3MywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.l1K135SKJuPum4EBKaFwVQCjSPFK2DM6q_irBkuus0k
+
+
+###
+GET http://localhost:8082/comment/list
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc3ODY1NzgsImV4cCI6MTY1Nzc5MDE3OCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.Wsbc5W0QpW6-dcPuCex60V3VD2-U5ubNvhvAcX3lANA
+
+###
+GET http://localhost:8082/comment/listByProfileId/62
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc3ODg2MTMsImV4cCI6MTY1Nzc5MjIxMywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.ELOKSQpkK74yEsr5ebGXopLAfRx4xxDI_qLDVOirnjc
+
+###
+GET http://localhost:8082/comment/listByOwner
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc3ODg2NzUsImV4cCI6MTY1Nzc5MjI3NSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.cHRQ6y1_j_bYXKLrXdl6Ppx_7a_puT-OJMOvgzBFirM
+
+###
+GET http://localhost:8082/comment/listByvideoId/8a8a817f81f5d41e0181f5d74c040004
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc3ODkyMDYsImV4cCI6MTY1Nzc5MjgwNiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.TbuPyUN86W1BbKF5pmcLGkcMOpeQmovces_nn27jpQU
+
+###
+GET http://localhost:8082/comment/commentRepliedCommentByCommentId/1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc3ODkyMDYsImV4cCI6MTY1Nzc5MjgwNiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.TbuPyUN86W1BbKF5pmcLGkcMOpeQmovces_nn27jpQU
+
+
+
+###
+DELETE http://localhost:8082/category/delete/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc3ODY1NzgsImV4cCI6MTY1Nzc5MDE3OCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.Wsbc5W0QpW6-dcPuCex60V3VD2-U5ubNvhvAcX3lANA
+
+

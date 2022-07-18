@@ -1,0 +1,243 @@
+###//create
+POST http://localhost:8082/video/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2ODU3ODUsImV4cCI6MTY1NzY4OTM4NSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.B6RkojzuZh_8RwsH5j5Bn5QdhIXCN-e7ZRAEZujmg0o
+
+{
+  "title": "5555555555555555555video",
+  "description": "Республиканинг тоғли ҳудудлари. Ҳаво ўзгариб туради, баъзи жойларда қисқа муддатли ёмғир ёғади",
+  "preview": "8a8a817f81f5d41e0181f5dfc37a000d",
+  "photo": "8a8a817f81f5d41e0181f5d932b90007",
+  "status" : "PRIVATE",
+  "type" : "VIDEO",
+  "channel" : "402880ea81da44b10181da45d3ac0000",
+  "baner" : "8a8a817f81f5d41e0181f5d719a80003",
+  "categoryList": [
+    3, 4
+
+  ],
+
+
+
+  "tagList": [
+   "#онкология"
+
+
+  ]
+}
+
+###//update detail
+PUT http://localhost:8082/video/update/402880ea81e536000181e53614b50000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2MjEzMTEsImV4cCI6MTY1NzYyNDkxMSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.exas30TS3XTzSlz4yijPkxCGTasjXbxYGGzqTN8GTSY
+
+{
+
+  "title" : "222222",
+  "description" : "man bugun kech boldi ertaga xudolasa ketaman",
+  "type" : "VIDEO",
+  "channel" : "402880ea81da432f0181da43a7ea0000"
+}
+
+###//photo
+PUT http://localhost:8082/video/update/photo/402880ea81e536000181e53614b50000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2MjI2NjAsImV4cCI6MTY1NzYyNjI2MCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.wE9F43xOqVlXGGhUr_O6guiga7qd9j9vARLAE_lQV-8
+
+{
+  "photoId": null
+}
+
+
+###//baner
+PUT http://localhost:8082/video/update/baner/402880ea81e536000181e53614b50000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2MjI2NjAsImV4cCI6MTY1NzYyNjI2MCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.wE9F43xOqVlXGGhUr_O6guiga7qd9j9vARLAE_lQV-8
+
+{
+  "banerId": null
+}
+
+
+###//baner
+PUT http://localhost:8082/video/changeStatus/402880ea81e536000181e53614b50000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc2MjI2NjAsImV4cCI6MTY1NzYyNjI2MCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.wE9F43xOqVlXGGhUr_O6guiga7qd9j9vARLAE_lQV-8
+
+{
+  "status": "PUBLIC"
+}
+
+###//increase View Count by Key
+GET http://localhost:8082/video/increaseViewCountbyKey/402880ea81e536000181e53614b50000
+Content-Type: application/json
+
+###//get Video Pagination by CategoryId
+GET http://localhost:8082/video/getVideoPaginationbyCategoryId/3
+Content-Type: application/json
+
+
+###//get Video Pagination by CategoryId
+GET http://localhost:8082/video/videoByTitle/222222222222222222video
+Content-Type: application/json
+
+###//video By Tag Id With Pagination
+GET http://localhost:8082/video/videoByTagIdWithPagination/2
+Content-Type: application/
+
+
+
+###//video By Id
+GET http://localhost:8082/video/getVideoId/8a8a817f81f5d41e0181f5df5cb0000c
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxNTQ2MzUsImV4cCI6MTY1ODE1ODIzNSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2OX0.KEduKoqVLn0xYk3aQQIHq1dm5BMGcvSHWaal5ABaDM8
+
+
+
+
+
+
+
+###//delete by admin
+DELETE http://localhost:8082/article/adm/8a8a84ed81754b2f0181756ce2b20000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU1MzYyMTUsImV4cCI6MTY1NTUzOTgxNSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxLCJyb2xlIjoiQURNSU4ifQ.zfYqv3W2C7EAhRdyzBVx3us6qNbNHQAKHusKYdfMgTM
+
+
+###//publish article bu publisher
+PUT http://localhost:8082/article/adm/publish/8a8a8580819059050181905af30f0003
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTYwMDQxOTQsImV4cCI6MTY1NjAwNzc5NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjozLCJyb2xlIjoiUFVCTElTSEVSIn0.Lvhsh1Z8VU1O3t3tpxaqTufHNFdKF3_xkjhMQsY5Z_A
+
+###//update article bu publisher
+PUT http://localhost:8082/article/adm/402880ea817ab7dd01817ac8f48b0000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTYzNDY1NTUsImV4cCI6MTY1NjM1MDE1NSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoyLCJyb2xlIjoiTU9ERVJBVE9SIn0.adjnjnHW6OZRk7Unawi_fGm3gTS9mtWRyWLHs-LVwGg
+
+{
+
+  "title" : "asdfghjhgfdsfghjm",
+  "content" : "qoycha qoycha x",
+  "description" : "asdfgthyrfedfrghjmgrfhjm",
+  "imageId" :  "null"
+}
+
+
+
+
+###//not publish article  publisher
+PUT http://localhost:8082/article/adm/notPublish/402880ea817ab7dd01817ac90c480001
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTU2MjUzMTMsImV4cCI6MTY1NTYyODkxMywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjozLCJyb2xlIjoiUFVCTElTSEVSIn0.35zk0RXtVFvL559WRbv8lMD9H-dorxyrxkOZwWmBgtI
+
+
+###//article last 5 by type
+GET http://localhost:8082/article/typeLast5/Муҳаррир танлови
+Content-Type: application/json
+
+###//article last 3 by type
+GET http://localhost:8082/article/typeLast3/Долзарб хабарлар
+Content-Type: application/json
+
+
+###
+POST http://localhost:8082/article/last8List
+Content-Type: application/json
+
+{
+
+  "idList": [
+              "8a8a84ed81754b2f01817570d9ae0001",
+              "8a8a84ed81754b2f018175732d0a0002",
+              "8a8a84ed81754b2f0181757518080003"
+            ]
+}
+
+
+
+### Get  article by id
+GET http://localhost:8082/article/getByIdFull/8a8a8580819059050181905af30f0003
+Content-Type: application/json
+
+
+###
+GET http://localhost:8082/article/last8List
+Content-Type: application/json
+
+{
+
+  "idList": [
+    "8a8a84ed81754b2f01817570d9ae0001",
+    "8a8a84ed81754b2f018175732d0a0002",
+    "8a8a84ed81754b2f0181757518080003"
+  ]
+}
+
+
+### Get       ///9
+GET http://localhost:8082/article/gatFourNoTIn/Долзарб хабарлар
+Content-Type: application/json
+
+{
+  "id" : "8a8a84ed81754b2f0181757518080003"
+}
+
+### Get  most 4
+GET http://localhost:8082/article/getMost4ViewedArticleList
+Content-Type: application/json
+
+
+### Get  last 4 by tagName
+GET http://localhost:8082/article/getLast4TagName/онкология
+Content-Type: application/json
+
+### get Last 5 Article By Types And By RegionKey
+GET http://localhost:8082/article/getLast5ArticleByTypesAndByRegionKey
+Content-Type: application/json
+
+{
+  "typeKey" : "Долзарб хабарлар",
+  "regionKey" : "Тошкент ш."
+}
+
+### get List Article  By RegionKey
+GET http://localhost:8082/article/getLastArticleListRegionKey/Тошкент ш.
+Content-Type: application/json
+
+
+### get List Article  By Category Key  List 5
+GET http://localhost:8082/article/getLast5CategoryList/BUSINESS CLASS
+Content-Type: application/json
+
+### get List Article  By Category Key  paginatin
+GET http://localhost:8082/article/getLast5CategoryPagination/BUSINESS CLASS
+Content-Type: application/json
+
+### 19. Increase Article View Count by Article Id
+GET http://localhost:8082/article/increaseArticleViewCountbyArticleId/8a8a84ed81754b2f018175732d0a0002
+Content-Type: application/json
+
+
+###
+POST http://localhost:8082/article/filter
+Content-Type: application/json
+
+{
+
+
+  "description" :  "Республиканинг"
+
+}
+
+
+###
+#{
+#  "id": null,
+#  "publishedDateFrom": null,
+#  "title": "Onnnkolgi44",
+#  "description" :  "Республиканинг",
+#  "regionId" :
+#  "categoryId " :
+#  "publishedDateFrom" : // yyyy-MM-dd
+# "publishedDateTo" :
+#}
+

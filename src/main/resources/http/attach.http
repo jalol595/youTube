@@ -1,0 +1,25 @@
+###
+POST http://localhost:8082/attache/upload
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+--WebAppBoundary
+Content-Disposition: form-data; name="file"; filename="production ID_3818213.mp4"
+
+< C:\Users\User\Desktop\1\production ID_3818213.mp4
+
+
+###
+GET http://localhost:8082/attache/open_general/8a8a816081d47a2e0181d50c91800001
+
+###
+GET http://localhost:8082/attache/download/8a8a816081d47a2e0181d50c91800001
+
+###
+DELETE http://localhost:8080/attache/delete/8a8a82a681ce243a0181ce24a7730000
+Content-Type: multipart/form-data; boundary=WebAppBoundary
+
+
+###
+GET http://localhost:8082/attache/adm/pagination?page=0&size=3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxNDY2MTcsImV4cCI6MTY1NzE1MDIxNywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.NhnWC6uff7v6ztA_cZSzPaOyjA66_6smtnEqHCcpTZY

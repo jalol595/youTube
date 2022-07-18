@@ -1,0 +1,64 @@
+###
+POST http://localhost:8082/subscription/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4MDI2NTMsImV4cCI6MTY1NzgwNjI1MywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.c_F2ycNGcg2LXmoE6q9i68sWYJZRByXWR1bCieyDv4s
+
+{
+  "channelId" : "402880ea81da2c720181da2d99690000",
+   "notificationType" : "NON"
+
+}
+
+###
+PUT http://localhost:8082/subscription/changeStatus/5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4MDI2NTMsImV4cCI6MTY1NzgwNjI1MywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.c_F2ycNGcg2LXmoE6q9i68sWYJZRByXWR1bCieyDv4s
+
+{
+  "channelId" : "402880ea81da44b10181da45d3ac0000",
+  "status" : "ACTIVE"
+}
+
+
+
+
+###
+PUT http://localhost:8082/subscription/changeNotification/5
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4MDI2NTMsImV4cCI6MTY1NzgwNjI1MywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.c_F2ycNGcg2LXmoE6q9i68sWYJZRByXWR1bCieyDv4s
+
+{
+  "channelId" : "402880ea81da44b10181da45d3ac0000",
+  "type" : "ALL"
+}
+
+
+###
+GET http://localhost:8082/subscription/userSubscriptionList
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4MDkwNzksImV4cCI6MTY1NzgxMjY3OSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.qfvoCSX41DyB-GtwIadNg9sBr3CTq0FmCcMEol2S2WA
+
+
+###
+GET http://localhost:8082/subscription/userSubscriptionListByUserId/62
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc4MDkxMjAsImV4cCI6MTY1NzgxMjcyMCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.MZ2zrfCvU68-rLFn8RDGfrL0ZYZICnhlzXG4GOZcNiM
+
+
+
+
+###
+PUT http://localhost:8082/category/update/3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxNDc0NTMsImV4cCI6MTY1NzE1MTA1MywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.JSC9AY12eeYeaAeXsO0RvmWgoyEM5jNTs5z1lNkCCfI
+
+{
+  "name" : "kino"
+}
+
+###
+DELETE http://localhost:8082/category/delete/2
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTcxNDc1NDcsImV4cCI6MTY1NzE1MTE0NywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.823OM_kr2jXaBT1X0v6Pu9r-hLx50Vt6CoWvgavS7js
+
+

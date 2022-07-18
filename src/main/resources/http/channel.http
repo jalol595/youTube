@@ -1,0 +1,86 @@
+###
+POST http://localhost:8082/channel/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczMDc5NzQsImV4cCI6MTY1NzMxMTU3NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.Vk6t0UsYaZgE01XiNmJ4UIQgRmF4JpblM_Y04jMEsdk
+
+{
+  "name": "sdfghgfdsfrgthy",
+  "description": "fgnhgfgh",
+  "photoId": "402880ea81d92f0e0181d96109eb0000",
+  "websiteUrl" : "lllllllllll.org",
+  "telegramUrl" : "sssddd.tel"
+}
+
+
+
+###
+GET http://localhost:8082/category/list
+Content-Type: application/json
+
+
+
+
+###
+PUT http://localhost:8082/channel/update/402880ea81da85390181da8592190000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczMDc5NzQsImV4cCI6MTY1NzMxMTU3NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.Vk6t0UsYaZgE01XiNmJ4UIQgRmF4JpblM_Y04jMEsdk
+
+{
+  "name": "333333333333333333",
+  "description": "444444444444444444444",
+  "instagramUrl" : "ins.lllll",
+  "websiteUrl" : "lllllllllll.org",
+  "telegramUrl" : "sssddd.tel"
+}
+
+
+###//photo
+PUT http://localhost:8082/channel/update/photo/402880ea81da85390181da8592190000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczMDc5NzQsImV4cCI6MTY1NzMxMTU3NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.Vk6t0UsYaZgE01XiNmJ4UIQgRmF4JpblM_Y04jMEsdk
+
+{
+  "photoId": null
+}
+
+
+###//baner
+PUT http://localhost:8082/channel/update/baner/402880ea81da85390181da8592190000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczMDc5NzQsImV4cCI6MTY1NzMxMTU3NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.Vk6t0UsYaZgE01XiNmJ4UIQgRmF4JpblM_Y04jMEsdk
+
+{
+  "banerId": null
+}
+
+
+###
+GET http://localhost:8082/channel/adm/pagination?page=0&size=3
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczMDEzMzcsImV4cCI6MTY1NzMwNDkzNywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.6k0XXZvfkahYWGZfWM_jTJ18qmhtPYL3e9eaPmRtkd8
+
+###
+GET http://localhost:8082/channel/getById/402880ea81da44b10181da45d3ac0000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczMDc5NzQsImV4cCI6MTY1NzMxMTU3NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.Vk6t0UsYaZgE01XiNmJ4UIQgRmF4JpblM_Y04jMEsdk
+
+
+###
+DELETE http://localhost:8082/channel/delete/402880ea81da85390181da8592190000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczMDUxNTEsImV4cCI6MTY1NzMwODc1MSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2OX0.7nqnIyTbs3M0Aitd8inZyq6Oy7J_JlSTkSYURBICxYA
+
+###
+GET http://localhost:8082/channel/list
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczMDc5NzQsImV4cCI6MTY1NzMxMTU3NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.Vk6t0UsYaZgE01XiNmJ4UIQgRmF4JpblM_Y04jMEsdk
+
+
+#"name": "voy dod",
+#"description": "oo dacshshti u",
+#"photoId": "402880ea81d92f0e0181d96109eb0000",
+#"banerId" :
+#"websiteUrl" :
+#"telegramUrl"
+#"instagramUrl" :
+//402880ea81daadb80181dac5163d0000

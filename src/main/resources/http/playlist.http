@@ -1,0 +1,87 @@
+###
+POST http://localhost:8082/playlist/create
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczMTc2NjEsImV4cCI6MTY1NzMyMTI2MSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.pl9fXBJ63ktz8_7q4cvG_zA8UNsAfhcmlATg5HRqK-E
+
+{
+  "channelId" : "402880ea81da44b10181da45d3ac0000",
+  "name": "7777777888",
+  "description": "77777777788888",
+  "status" : "PRIVATE"
+
+}
+
+
+###
+PUT http://localhost:8082/playlist/update/8
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczMjEzMjgsImV4cCI6MTY1NzMyNDkyOCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.OFSBVZujAIoVZ7zdlUZFL0eRyrZ4J3sBJpeA1PTEmjY
+
+{
+
+  "name": "bbbbbbbbbbbbbbbbb",
+  "description": "vbbbbbbbbbbbbbbbbb"
+
+
+}
+
+###
+PUT http://localhost:8082/playlist/changeStatus/8
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczMjM3NzMsImV4cCI6MTY1NzMyNzM3MywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2OX0.E_7WX3VP-dhtTt_BDB8rmHxd1caKP7NRxBK8C9JNMuI
+
+{
+
+  "status" : "PUBLIC"
+
+
+}
+
+###//delete
+DELETE http://localhost:8082/playlist/delete/6
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczODU5OTMsImV4cCI6MTY1NzM4OTU5MywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2OX0.MvrMElQy-LC8Zlgb1khI6TZjMdmYpE0xSUFJEqBMGio
+
+###//pagination only admin
+GET http://localhost:8082/playlist/adm/pagination?page=0&size=8
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc0OTAxODYsImV4cCI6MTY1NzQ5Mzc4NiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.GJD2ftkwthSE9Sp6HgUkn7zmbX_B9nhSSPmtFKdRqgE
+
+###
+GET http://localhost:8082/playlist/listByUserId/61
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTc0OTAxODYsImV4cCI6MTY1NzQ5Mzc4NiwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjoxfQ.GJD2ftkwthSE9Sp6HgUkn7zmbX_B9nhSSPmtFKdRqgE
+
+
+###
+GET http://localhost:8082/playlist/getUserPlaylist
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTgxMjUyOTMsImV4cCI6MTY1ODEyODg5MywiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.X6gEZKt5Ii3Y7dyim1JGrpMekJlKwOd_gRetOYeEmM8
+
+###
+GET http://localhost:8082/playlist/playListByChannelKey/402880ea81da85390181da8592190000
+Content-Type: application/json
+
+###
+GET http://localhost:8082/playlist/fullInfo/5
+Content-Type: application/json
+
+###
+DELETE http://localhost:8082/channel/delete/402880ea81da85390181da8592190000
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczMDUxNTEsImV4cCI6MTY1NzMwODc1MSwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2OX0.7nqnIyTbs3M0Aitd8inZyq6Oy7J_JlSTkSYURBICxYA
+
+###
+GET http://localhost:8082/channel/list
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE2NTczMDc5NzQsImV4cCI6MTY1NzMxMTU3NCwiaXNzIjoiTWF6Z2kgcHJvZHVjdGlvbiIsImlkIjo2Mn0.Vk6t0UsYaZgE01XiNmJ4UIQgRmF4JpblM_Y04jMEsdk
+
+
+#"name": "voy dod",
+#"description": "oo dacshshti u",
+#"photoId": "402880ea81d92f0e0181d96109eb0000",
+#"banerId" :
+#"websiteUrl" :
+#"telegramUrl"
+#"instagramUrl" :
+//402880ea81daadb80181dac5163d0000

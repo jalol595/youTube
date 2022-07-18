@@ -1,0 +1,31 @@
+
+###//admin
+POST localhost:8082/auth/login
+Content-Type: application/json
+
+{
+  "email": "toshmat@mail.tu",
+  "password": "1234"
+}
+
+
+###//user
+POST localhost:8082/auth/login
+Content-Type: application/json
+
+{
+  "email": "jalolkarshiboyev@gmail.com",
+  "password": "2222"
+}
+
+###//user
+POST localhost:8082/auth/login
+Content-Type: application/json
+
+{
+  "email": "xxxxxxxxxx@gmail.com",
+  "password": "1234"
+}
+
+
+
